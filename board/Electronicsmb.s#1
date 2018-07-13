@@ -6829,6 +6829,12 @@ part number 2062-2P from STA</description>
 <part name="D13" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:39353/1"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:25945/1" value="270"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6887,6 +6893,12 @@ Merrit Badge Kit</text>
 <instance part="D13" gate="G$1" x="195.58" y="55.88" rot="R90"/>
 <instance part="R2" gate="G$1" x="185.42" y="55.88"/>
 <instance part="SUPPLY1" gate="GND" x="139.7" y="93.98" rot="R90"/>
+<instance part="J2" gate="G$1" x="35.56" y="43.18"/>
+<instance part="J3" gate="G$1" x="35.56" y="30.48"/>
+<instance part="P+4" gate="VCC" x="48.26" y="45.72" rot="R270"/>
+<instance part="P+5" gate="VCC" x="48.26" y="43.18" rot="R270"/>
+<instance part="SUPPLY7" gate="GND" x="48.26" y="33.02" rot="R90"/>
+<instance part="SUPPLY8" gate="GND" x="48.26" y="30.48" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6969,6 +6981,16 @@ Merrit Badge Kit</text>
 <pinref part="S1" gate="1" pin="P"/>
 <wire x1="134.62" y1="93.98" x2="137.16" y2="93.98" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="2"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<wire x1="43.18" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="1"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+<wire x1="43.18" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -6986,6 +7008,16 @@ Merrit Badge Kit</text>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <wire x1="30.48" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+<wire x1="43.18" y1="45.72" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="43.18" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">

@@ -6815,7 +6815,6 @@ part number 2062-2P from STA</description>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="A1" library="wirepad" deviceset="2,54/1,0" device=""/>
 <part name="A2" library="wirepad" deviceset="2,54/1,0" device=""/>
@@ -6879,7 +6878,6 @@ Merrit Badge Kit</text>
 <instance part="SUPPLY2" gate="GND" x="25.4" y="68.58" rot="R270"/>
 <instance part="P+1" gate="VCC" x="50.8" y="68.58" rot="R270"/>
 <instance part="J1" gate="G$1" x="22.86" y="132.08"/>
-<instance part="P+3" gate="VCC" x="35.56" y="134.62" rot="R270"/>
 <instance part="SUPPLY3" gate="GND" x="35.56" y="132.08" rot="R90"/>
 <instance part="A1" gate="P" x="76.2" y="66.04"/>
 <instance part="A2" gate="P" x="76.2" y="58.42"/>
@@ -7003,11 +7001,6 @@ Merrit Badge Kit</text>
 <pinref part="U$2" gate="G$1" pin="A"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="45.72" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="30.48" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="2"/>
@@ -7364,6 +7357,18 @@ Merrit Badge Kit</text>
 <pinref part="U$1" gate="G$1" pin="TX0"/>
 <pinref part="S1" gate="1" pin="S"/>
 <wire x1="111.76" y1="93.98" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RAW" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RAW"/>
+<wire x1="78.74" y1="93.98" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
+<label x="73.66" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
+<label x="35.56" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
