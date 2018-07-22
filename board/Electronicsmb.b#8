@@ -40,7 +40,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -150,13 +150,13 @@
 <wire x1="96" y1="0" x2="96" y2="70" width="0" layer="20"/>
 <wire x1="96" y1="70" x2="0" y2="70" width="0" layer="20"/>
 <wire x1="0" y1="70" x2="0" y2="0" width="0" layer="20"/>
-<text x="69.85" y="62.23" size="1.778" layer="25">1</text>
-<text x="80.01" y="48.26" size="1.778" layer="25">2</text>
-<text x="83.82" y="34.29" size="1.778" layer="25">3</text>
-<text x="80.01" y="22.86" size="1.778" layer="25">4</text>
+<text x="69.85" y="63.5" size="1.778" layer="25">1</text>
+<text x="80.01" y="49.53" size="1.778" layer="25">2</text>
+<text x="82.55" y="36.83" size="1.778" layer="25">3</text>
+<text x="80.01" y="24.13" size="1.778" layer="25">4</text>
 <text x="71.12" y="12.7" size="1.778" layer="25">5</text>
 <text x="50.8" y="6.35" size="1.778" layer="25">6</text>
-<text x="33.02" y="12.7" size="1.778" layer="25">7</text>
+<text x="31.75" y="12.7" size="1.778" layer="25">7</text>
 <text x="22.86" y="24.13" size="1.778" layer="25">8</text>
 <text x="19.05" y="36.83" size="1.778" layer="25">9</text>
 <text x="22.86" y="49.53" size="1.778" layer="25">10</text>
@@ -171,6 +171,10 @@ k3do.com</text>
 <text x="8.89" y="2.54" size="1.778" layer="25">Start</text>
 <text x="86.36" y="2.54" size="1.778" layer="25">Mode</text>
 <text x="2.54" y="10.16" size="1.778" layer="25">Pin 13 LED</text>
+<hole x="6.35" y="6.35" drill="1.5"/>
+<hole x="6.35" y="64.77" drill="1.5"/>
+<hole x="88.9" y="64.77" drill="1.5"/>
+<hole x="88.9" y="6.35" drill="1.5"/>
 </plain>
 <libraries>
 <library name="SparkFun-LED" urn="urn:adsk.eagle:library:529">
